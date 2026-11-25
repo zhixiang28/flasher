@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.8.6",
+    "file": "fishwatch_v0.8.6_merged.bin",
+    "address": "0x0",
+    "size": 5052784,
+    "sha256": "667c61dbe365c191c3e90ff2501dede5d6c7f68c3e7649af15b987fd399ee5f2",
+    "date": "2026-11-26",
+    "notes": "修好内存不够：灯、小智、翻译、电台、录音、笔记都能用了；蓝牙改回用到才开。录音最长 30 秒。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.8.5",
     "file": "fishwatch_v0.8.5_merged.bin",
     "address": "0x0",
     "size": 5052832,
     "sha256": "bf3330380887b5dc623dd4b868814fb3c32fa2ce4787254d9e9c712ed4bbe819",
-    "date": "2026-11-26",
-    "notes": "笔记可以打开来看、录音可以听旧的；按键不再振动（设置里可打开）；开蓝牙／遥控拍照不再重启。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.8.4",
-    "file": "fishwatch_v0.8.4_merged.bin",
-    "address": "0x0",
-    "size": 5049792,
-    "sha256": "5c599a7a9ec182eae69d6efc64a845c7ad20a768f295e537b6c643094f4a18a9",
     "date": "2026-11-26",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
