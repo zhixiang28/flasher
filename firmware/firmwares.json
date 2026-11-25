@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.7.5",
+    "file": "fishwatch_v0.7.5_merged.bin",
+    "address": "0x0",
+    "size": 3266512,
+    "sha256": "1909c1797e28f5ca6049a4a5840fd7ff4b97c2f9fc38be45ce1ceeb349da842e",
+    "date": "2026-11-25",
+    "notes": "修好办公室灯一直没反应（连线任务开不起来）；出错时会显示原因。含之前所有修复。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.7.4",
     "file": "fishwatch_v0.7.4_merged.bin",
     "address": "0x0",
     "size": 3266064,
     "sha256": "f8945fd945b4e1c77bf7dc2d29e7046356940c268ca456ccbf7f177fd1626594",
-    "date": "2026-11-25",
-    "notes": "专注、计步、组间休息的数字置中；改重量时 kg 跟着移动。含 v0.7.2、v0.7.3 的修复。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.7.3",
-    "file": "fishwatch_v0.7.3_merged.bin",
-    "address": "0x0",
-    "size": 3265936,
-    "sha256": "7597e0d0e3919b5cc0b4cb4d9187302fa242b5f039f8fee516493fa60c2e19c4",
     "date": "2026-11-25",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
