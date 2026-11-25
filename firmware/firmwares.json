@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.7.3",
+    "file": "fishwatch_v0.7.3_merged.bin",
+    "address": "0x0",
+    "size": 3265936,
+    "sha256": "7597e0d0e3919b5cc0b4cb4d9187302fa242b5f039f8fee516493fa60c2e19c4",
+    "date": "2026-11-25",
+    "notes": "WiFi 自动关闭时不再显示「断开（原因 36）」。含 v0.7.2 的修复。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.7.2",
     "file": "fishwatch_v0.7.2_merged.bin",
     "address": "0x0",
     "size": 3265840,
     "sha256": "6377a5cf3a9a23a4227ddf247c8c890cf35173a1bd52d36d9db553f867b17959",
-    "date": "2026-11-25",
-    "notes": "WiFi 名称带引号也正常显示；WiFi 开关更稳；能连隐藏 WiFi。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.7.1",
-    "file": "fishwatch_v0.7.1_merged.bin",
-    "address": "0x0",
-    "size": 3265264,
-    "sha256": "00a98c640e1d9ba47a3dce5728dbe664b693979dde49fec343caa868ac9d2913",
     "date": "2026-11-25",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
