@@ -1,22 +1,22 @@
 [
   {
+    "name": "FishWatch v0.8.0",
+    "file": "fishwatch_v0.8.0_merged.bin",
+    "address": "0x0",
+    "size": 5041488,
+    "sha256": "cf99f8560ca0bfddbd3f95e772386170223ed0e65ef731943403c6807cbaffa0",
+    "date": "2026-11-26",
+    "notes": "新功能：小智语音助手、翻译、网络电台、遥控拍照、手机通知（要装 Android App）；常用汉字字体。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.7.11",
     "file": "fishwatch_v0.7.11_merged.bin",
     "address": "0x0",
     "size": 3304384,
     "sha256": "984f9652847f7226a8e790f7339856fc103628abb08b2b16e094d4378d90d884",
     "date": "2026-11-26",
-    "notes": "WiFi 连得更快（记住上次连的路由器、沿用上次的 IP、用完多开一会）。含之前所有修复。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.7.10",
-    "file": "fishwatch_v0.7.10_merged.bin",
-    "address": "0x0",
-    "size": 3302960,
-    "sha256": "abe9d908d9104a9ee149535bb9a78535ddbef67b0d36d16bdb9eb2f1c943e359",
-    "date": "2026-11-25",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
     "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
