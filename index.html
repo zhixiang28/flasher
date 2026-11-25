@@ -100,6 +100,7 @@
     <div class="row">
       <label class="chk"><input type="checkbox" id="ackBackup"> 我已经备份过原厂固件</label>
       <label class="chk"><input type="checkbox" id="eraseAll"> 刷入前整片擦除</label>
+      <label class="chk" title="合并固件里的 NVS 区是空的，照写会清掉手表里的 WiFi、配对、设定、健康纪录"><input type="checkbox" id="keepNvs" checked> 保留手表设定（WiFi、配对、健康纪录）</label>
     </div>
     <div class="row" style="margin-top:10px">
       <button id="btnFlash" disabled>⚡ 开始刷入</button>
@@ -281,7 +282,37 @@ $('btnPreset').onclick = () => { $('files').innerHTML = ''; addFileRow('0x0'); a
 
 const readFile = f => new Promise((ok, no) => { const r = new FileReader(); r.onload = () => ok(new Uint8Array(r.result)); r.onerror = no; r.readAsArrayBuffer(f); });
 
+/* A merged image (written at 0x0) also covers the NVS partition, filled with 0xFF, which
+   wipes the watch's saved WiFi / pairing / settings / health data and RF calibration.
+   Read its partition table and skip the nvs + phy data partitions. */
+function skipNvs(items) {
+  const out = [];
+  for (const it of items) {
+    const d = it.data;
+    if (it.address !== 0 || d.length <= 0x9000) { out.push(it); continue; }
+    const skip = [];
+    for (let o = 0x8000; o + 32 <= 0x8C00 && o + 32 <= d.length; o += 32) {
+      if (d[o] !== 0xAA || d[o + 1] !== 0x50) break;
+      const type = d[o + 2], sub = d[o + 3];
+      const off = d[o + 4] | d[o + 5] << 8 | d[o + 6] << 16 | d[o + 7] << 24;
+      const size = d[o + 8] | d[o + 9] << 8 | d[o + 10] << 16 | d[o + 11] << 24;
+      if (type === 1 && (sub === 1 || sub === 2) && off < d.length) skip.push([off, Math.min(off + size, d.length), sub]);
+    }
+    if (!skip.length) { out.push(it); continue; }
+    skip.sort((a, b) => a[0] - b[0]);
+    let pos = 0;
+    for (const [a, b, sub] of skip) {
+      if (a > pos) out.push({ name: `${it.name} [0x${pos.toString(16)}–0x${a.toString(16)}]`, address: pos, data: d.subarray(pos, a) });
+      log(`🛡 保留 0x${a.toString(16)}–0x${b.toString(16)}（${sub === 2 ? 'NVS 设定' : 'PHY 资料'}），不写入`);
+      pos = Math.max(pos, b);
+    }
+    if (pos < d.length) out.push({ name: `${it.name} [0x${pos.toString(16)}–]`, address: pos, data: d.subarray(pos) });
+  }
+  return out;
+}
+
 async function doFlash(items, label) {
+  if (label !== 'restore' && $('keepNvs').checked && !$('eraseAll').checked) items = skipNvs(items);
   busy = true; refresh();
   const t0 = Date.now();
   const totalBytes = items.reduce((s, x) => s + x.data.length, 0);
