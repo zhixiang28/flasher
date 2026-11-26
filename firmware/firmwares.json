@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.9.0",
+    "file": "fishwatch_v0.9.0_merged.bin",
+    "address": "0x0",
+    "size": 5058240,
+    "sha256": "d6ca627a013a7ff99e1ecba76e80e1d291d50ac8fe56d3fa1d1386e5b0cc9f75",
+    "date": "2026-11-26",
+    "notes": "小智免按键一直听；小智送声音更稳（不再丢声音）；点音乐图标开小窗控制音乐。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.8.9",
     "file": "fishwatch_v0.8.9_merged.bin",
     "address": "0x0",
     "size": 5054480,
     "sha256": "e28b9d980ea94b8f2a1098b6c90b893eb88c226b93af49ffdd3dab9c751971cb",
-    "date": "2026-11-26",
-    "notes": "上方显示 WiFi 使用中／音乐播放中图标；小智画面多一行小字（送出/收到）帮忙找问题。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.8.8",
-    "file": "fishwatch_v0.8.8_merged.bin",
-    "address": "0x0",
-    "size": 5053488,
-    "sha256": "3ac94bff180d2e5e0dfb118f32f4b32f5bb098948f8ad8d8e3e61080c2012f23",
     "date": "2026-11-26",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
