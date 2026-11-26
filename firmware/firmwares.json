@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.9.8",
+    "file": "fishwatch_v0.9.8_merged.bin",
+    "address": "0x0",
+    "size": 7827682,
+    "sha256": "8f637da37bd0dcb8ca5d6de13a85bdcd9f0f3e323d7769c4c072705312e3c546",
+    "date": "2026-11-26",
+    "notes": "电台：更能读懂各种电台服务器的回应、自动认出 AAC／MP3；纪录更详细方便找问题。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.9.7",
     "file": "fishwatch_v0.9.7_merged.bin",
     "address": "0x0",
     "size": 7827682,
     "sha256": "92ec6940ce23014d2d098a29f20b8e3ab16ad45d8ca1e1212da6404687cd98b9",
-    "date": "2026-11-26",
-    "notes": "修好电台：会跟着转址（302），也能连 SHOUTcast（ICY）电台；新加坡／马来西亚电台应该能播了。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.9.6",
-    "file": "fishwatch_v0.9.6_merged.bin",
-    "address": "0x0",
-    "size": 7827682,
-    "sha256": "32a0cea3ef9c1a4c0bfca55f1bf5675d049e4608c164289c85b89b5f92060454",
     "date": "2026-11-26",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
