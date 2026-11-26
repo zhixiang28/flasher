@@ -1,21 +1,21 @@
 [
   {
+    "name": "FishWatch v0.9.2",
+    "file": "fishwatch_v0.9.2_merged.bin",
+    "address": "0x0",
+    "size": 5058816,
+    "sha256": "11c100f779514c86e2096f07792e906ad910d84a827aae734f780dfefac2ee62",
+    "date": "2026-11-26",
+    "notes": "修好小智只听第一句：回答完会继续听。",
+    "latest": true,
+    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
+  },
+  {
     "name": "FishWatch v0.9.1",
     "file": "fishwatch_v0.9.1_merged.bin",
     "address": "0x0",
     "size": 5058672,
     "sha256": "be34bf65178829e65634c8ca824f0f8469a84b1d5c80a53079659bc3ae4f4e15",
-    "date": "2026-11-26",
-    "notes": "控制中心 WiFi 可选 自动／常开／关：常开时小智打开就能用。",
-    "latest": true,
-    "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
-  },
-  {
-    "name": "FishWatch v0.9.0",
-    "file": "fishwatch_v0.9.0_merged.bin",
-    "address": "0x0",
-    "size": 5058240,
-    "sha256": "d6ca627a013a7ff99e1ecba76e80e1d291d50ac8fe56d3fa1d1386e5b0cc9f75",
     "date": "2026-11-26",
     "notes": "上一版，有问题时用来刷回。",
     "latest": false,
