@@ -1,12 +1,12 @@
 [
   {
-    "name": "FishWatch v0.9.3",
-    "file": "fishwatch_v0.9.3_merged.bin",
+    "name": "FishWatch v0.9.4",
+    "file": "fishwatch_v0.9.4_merged.bin",
     "address": "0x0",
     "size": 7827682,
-    "sha256": "72532f646abf2275b1dc00e1a08170b67a479dfb866ccfca3cacffe422471132",
+    "sha256": "b256c4ff60842903685784aa25068a2ad3e7929ab3d1996d0d149ec3aed41a1e",
     "date": "2026-11-26",
-    "notes": "说「你好小智」随时唤醒小智（设置里打开）。档案比较大（多了唤醒词模型）。",
+    "notes": "修好打开「你好小智唤醒」会当机；音乐可以搜新加坡／马来西亚电台。",
     "latest": true,
     "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
   },
@@ -17,7 +17,7 @@
     "size": 5058816,
     "sha256": "11c100f779514c86e2096f07792e906ad910d84a827aae734f780dfefac2ee62",
     "date": "2026-11-26",
-    "notes": "上一版，有问题时用来刷回。",
+    "notes": "上一版（没有语音唤醒），有问题时用来刷回。",
     "latest": false,
     "board": "Waveshare ESP32-S3-Touch-AMOLED-2.06"
   }
